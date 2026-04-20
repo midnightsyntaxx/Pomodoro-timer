@@ -30,7 +30,7 @@ pomodoro-timer/
 
 - Fully Responsive: Tampilan tetap optimal baik di layar desktop maupun perangkat seluler
 
-
+---
 ## 🛠️ Tech Stack
 
 Aplikasi ini dibangun menggunakan teknologi web murni tanpa library eksternal (Vanilla Tech)
