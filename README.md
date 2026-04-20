@@ -16,7 +16,7 @@ pomodoro-timer/
 │   └── script.js        # Logika utama timer dan kontrol DOM
 ├── index.html           # File utama (Entry point aplikasi)
 └── README.md            # Dokumentasi proyek
-
+```
 ## ✨ Features
 
 - Precision Layout: Didesain dengan ketelitian tinggi menggunakan CSS Flexbox agar seluruh elemen simetris secara horizontal maupun vertikal
