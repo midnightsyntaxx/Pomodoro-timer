@@ -1,0 +1,162 @@
+*,
+html,
+body {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+:root {
+--background-color: #ec4444;
+--background-child: #ffffffa6;
+--box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);
+}
+
+body {
+background-image: url('../assets/images/samurai-sunset.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+overflow-x: hidden;
+width: 100%;
+margin: 10px auto;
+}
+
+header {
+width: 100%;
+padding: 24px;
+text-align: center;
+display: flex;
+justify-content: center;
+}
+
+.title {
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+color: rgb(255, 218, 218);
+font-size: 1.8rem;
+animation: sideInUp 1.3s ease-in-out;
+}
+
+@keyframes sideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+main {
+margin: 30px auto;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.container {
+width: 100%;
+max-width: 340px;
+padding: 20px 20px;
+background-color: var(--background-child);
+box-shadow: var(--box-shadow);
+border-radius: 14px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.content {
+border-bottom: 3px solid #d15656;
+}
+
+.content h2 {
+margin-bottom: 24px;
+font-size: 2rem;
+color: #d11f1f;
+font-family:Arial, "Poppins", sans-serif;
+}
+
+.display-timer {
+font-size: 5rem;
+font-weight: bold;
+font-family: "JetBrains Mono", monospace;
+}
+
+.buttons {
+display: flex;
+justify-content: center;
+gap: 15px;
+}
+
+button {
+font-family: "Poppins", sans-serif;
+font-size: 1.3rem;
+padding: 14px 14px;
+cursor: pointer;
+border: none;
+border-radius: 14px;
+transition: 0.3s ease-in-out;
+}
+
+button:active {
+background-color: #afaaaa;
+color: #333;
+}
+
+.start {background-color: green; color: white; }
+.stop {background-color: rgb(255, 196, 0); color: white; }
+.reset {background-color: red; color: white; } 
+
+
+
+.license {
+display: inline-block;
+margin-top: 50px;
+}
+
+a {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+color: rgba(192, 190, 190, 0.623);
+text-decoration: none;
+transition: 0.3s ease-in-out;
+}
+
+
+
+.license a:hover {
+color: white;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .title {
+        height: 20vh;
+        font-size: 2.4rem;
+        margin-top: 20px;
+    }
+
+    .container {
+        max-width: 600px;
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        flex-direction: row !important;
+        gap: 20px;
+    }
+
+    button {
+        font-size: 40px;
+    }
+}

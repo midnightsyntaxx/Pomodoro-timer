@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro-timer</title>
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" 
+    rel="stylesheet">
+
+    <link rel="preload" as="image" href="assets/images/samurai-sunset.jpg">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>pomodoro timer</h1>
+            <p>tingkatkan fokus belajar mu</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="content">
+                <h2>pomodoro</h2>
+                <div class="display-timer" id="display">25:00</div>
+            </div>
+            <div class="buttons">
+                <button class="start" onclick="startTimer()">start</button>
+                <button class="stop" onclick="stopTimer()">stop</button>
+                <button class="reset" onclick="resetTimer()">reset</button>
+            </div>
+        </div>
+
+        <div class="license">
+            <a href="https://www.freepik.com/free-ai-image/samurai-sunset_417436958.htm#fromView=keyword&page=1&position=47&uuid=d36202a0-349b-432c-a812-051f3b59369b&query=Aesthetic+anime+wallpaper">Image by freepik</a>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>   
+</body>
+</html>
